@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "solaria-apex-fallback",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-29",
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "solarianetwork.site/*",
+      "zone_name": "solarianetwork.site"
+    }
+  ],
+  "vars": {
+    "ORIGIN_HOST": "origin.solarianetwork.site"
+  },
+  "observability": {
+    "enabled": true
+  }
+}
